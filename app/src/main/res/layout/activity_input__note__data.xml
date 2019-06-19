@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:elevation="8dp"
+            app:titleTextAppearance="@style/ToolbarThemeInput"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputLayout_title"
+        android:layout_marginTop="20dp"
+        style="@style/MyOverflowText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="140">
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/title"
+        style="@style/FullWidthEditText"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:layout_height="wrap_content"
+        android:maxLength="140"
+        android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+        android:hint="Subject"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inputLayout_text"
+        android:layout_marginTop="5dp"
+        style="@style/MyOverflowText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="1000">
+
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_marginTop="5dp"
+        android:id="@+id/text"
+        style="@style/FullWidthEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Text"
+        android:paddingStart="20dp"
+        android:paddingEnd="@dimen/padd_10"
+        android:maxLength="1000"
+        android:textColor="@color/black_semi_transparent" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

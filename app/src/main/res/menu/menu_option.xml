@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_arrow_drop_down_black_24dp"
+        app:showAsAction="ifRoom"
+        tools:ignore="MenuTitle">
+        <menu>
+            <item
+                android:id="@+id/menuRecent"
+                android:title="Recents" />
+            <item
+                android:id="@+id/menuFab"
+                android:title="Favourite" />
+        </menu>
+    </item>
+
+</menu>
